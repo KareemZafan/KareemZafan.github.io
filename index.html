@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kareem Abdelaziz | Senior Test Automation Engineer</title>
+<meta name="description" content="Senior Test Automation Engineer with 6+ years of experience in Playwright, Selenium, REST-assured, Appium and CI/CD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F6FA; --surface:#FFFFFF; --ink:#172131; --muted:#566275;
+  --line:#D6DDE7; --accent:#2F45C9; --pass:#1C8457;
+  --term-bg:#16213A; --term-ink:#D8E0F0; --term-dim:#8391AD;
+  --sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1624; --surface:#162033; --ink:#E6EBF4; --muted:#9AA6BA;
+    --line:#26324A; --accent:#8C9BFF; --pass:#4CC98C;
+    --term-bg:#0A101C; --term-ink:#D8E0F0; --term-dim:#7482A0;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1624; --surface:#162033; --ink:#E6EBF4; --muted:#9AA6BA;
+  --line:#26324A; --accent:#8C9BFF; --pass:#4CC98C;
+  --term-bg:#0A101C; --term-ink:#D8E0F0; --term-dim:#7482A0;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6}
+img{max-width:100%}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+
+/* nav */
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:1rem;flex-wrap:wrap}
+nav .brand{font-weight:800;color:var(--ink);text-decoration:none;font-size:1.05rem}
+nav ul{list-style:none;display:flex;gap:1.25rem;margin:0;padding:0;flex-wrap:wrap}
+nav ul a{color:var(--muted);text-decoration:none;font-weight:500}
+nav ul a:hover{color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:center;padding:3.5rem 0 4.5rem}
+.hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem);line-height:1.02;letter-spacing:-.025em;margin:0 0 .75rem;font-weight:800}
+.hero .role{font-size:1.3rem;font-weight:500;color:var(--muted);margin:0 0 1.5rem}
+.hero p.lead{max-width:34rem;margin:0 0 2rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.75rem 1.2rem;border-radius:8px;font-weight:700;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#0F1624}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary{color:#0F1624}}
+.btn.ghost{color:var(--accent)}
+.meta{margin-top:1.5rem;color:var(--muted);font-size:.95rem}
+
+/* test runner: the one memorable element */
+.runner{background:var(--term-bg);color:var(--term-ink);border-radius:14px;padding:1.4rem 1.5rem 1.6rem;font-family:var(--mono);font-size:.86rem;line-height:1.85;box-shadow:0 24px 48px -24px rgba(23,33,49,.45);overflow-x:auto}
+.runner .dots{display:flex;gap:6px;margin-bottom:1rem}
+.runner .dots span{width:10px;height:10px;border-radius:50%;background:#3A4868}
+.runner .cmd{color:var(--term-dim)}
+.runner .cmd b{color:var(--term-ink);font-weight:400}
+.runner .ok{color:#5BD69A}
+.runner .t{color:var(--term-dim)}
+.runner .sum{margin-top:.8rem;padding-top:.8rem;border-top:1px solid #2A3654}
+.runner .sum strong{color:#5BD69A;font-weight:600}
+.runner .line{white-space:nowrap}
+@media (prefers-reduced-motion:no-preference){
+  .runner .line{opacity:0;animation:tick .25s ease-out forwards}
+  @keyframes tick{to{opacity:1}}
+}
+
+/* sections */
+section{padding:4rem 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.7rem,3vw,2.2rem);letter-spacing:-.015em;margin:0 0 .5rem;line-height:1.15}
+.intro{color:var(--muted);max-width:40rem;margin:0 0 2.5rem}
+
+/* highlights */
+.highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.highlights h3{font-size:1.15rem;margin:0 0 .4rem}
+.highlights p{margin:0;color:var(--muted)}
+.highlights div{border-left:3px solid var(--pass);padding-left:1rem}
+
+/* timeline */
+.timeline{list-style:none;margin:0;padding:0;position:relative}
+.timeline::before{content:"";position:absolute;left:7px;top:.6rem;bottom:.6rem;width:2px;background:var(--line)}
+.timeline>li{position:relative;padding-left:2.25rem;margin-bottom:2.75rem}
+.timeline>li:last-child{margin-bottom:0}
+.timeline>li::before{content:"";position:absolute;left:0;top:.45rem;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.timeline>li.current::before{background:var(--accent)}
+.job-head{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:baseline}
+.job-head h3{margin:0;font-size:1.25rem}
+.job-head .when{color:var(--muted);font-size:.95rem;white-space:nowrap}
+.company{margin:.1rem 0 .7rem;color:var(--muted)}
+.company strong{color:var(--ink)}
+.timeline ul{margin:0;padding-left:1.1rem}
+.timeline ul li{margin-bottom:.3rem;max-width:44rem}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem 2.5rem}
+.skills h3{font-size:1rem;margin:0 0 .6rem}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem;list-style:none;margin:0;padding:0}
+.tags li{border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:.2rem .6rem;font-size:.92rem}
+
+/* two columns */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.plain{list-style:none;margin:0;padding:0}
+.plain li{padding:.85rem 0;border-bottom:1px solid var(--line)}
+.plain li:first-child{padding-top:0}
+.plain .sub{display:block;color:var(--muted);font-size:.93rem}
+
+/* contact */
+.contact{text-align:left}
+.contact .big{font-size:clamp(1.4rem,3.4vw,2.2rem);font-weight:700;word-break:break-word}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:2.5rem;padding-top:2rem}
+  .highlights{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .runner{font-size:.76rem;padding:1.1rem}
+  nav ul{gap:.9rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav aria-label="Main">
+  <a class="brand" href="#top">Kareem Abdelaziz</a>
+  <ul>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#credentials">Credentials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <div>
+    <h1>Kareem Abdelaziz</h1>
+    <p class="role">Senior Test Automation Engineer</p>
+    <p class="lead">I build stable, reusable test automation for web, mobile and APIs, and wire it into CI/CD so teams get fast, trustworthy feedback. Over 6 years I've turned regression cycles from hours into minutes, led and coached QA teams, and taught testing at ITI. I also use AI tools like Claude, Cursor and Playwright MCP to speed up test design and maintenance.</p>
+    <div class="actions">
+      <a class="btn primary" href="Kareem_Abdelaziz_CV.pdf" download>Download CV</a>
+      <a class="btn ghost" href="mailto:kareemm.zafan@gmail.com">Email me</a>
+    </div>
+    <p class="meta">
+      Based in 6th of October, Giza, Egypt, open to remote work.<br>
+      <!-- TODO: replace # with your real profile links -->
+      <a href="#">LinkedIn</a> &nbsp;|&nbsp; <a href="#">GitHub</a> &nbsp;|&nbsp; <a href="#">HackerRank</a>
+    </p>
+  </div>
+
+  <div class="runner" role="img" aria-label="A test run showing six passing checks that summarize Kareem's experience">
+    <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="line cmd">$ <b>npx playwright test career.spec.ts</b></div>
+    <div class="line t">Running 6 tests using 1 worker</div>
+    <div class="line"><span class="ok">✓</span> builds E2E frameworks for web and mobile</div>
+    <div class="line"><span class="ok">✓</span> validates APIs end to end with REST-assured</div>
+    <div class="line"><span class="ok">✓</span> runs suites in GitLab CI, Actions and Jenkins</div>
+    <div class="line"><span class="ok">✓</span> cuts regression from hours to minutes</div>
+    <div class="line"><span class="ok">✓</span> coaches junior and senior engineers</div>
+    <div class="line"><span class="ok">✓</span> teaches testing at ITI since 2021</div>
+    <div class="line sum"><strong>6 passed</strong> <span class="t">(6+ years)</span></div>
+  </div>
+</header>
+
+<section id="highlights" aria-labelledby="h-highlights">
+  <h2 id="h-highlights">What I bring to a team</h2>
+  <p class="intro">The results I've delivered repeatedly across Adfinis, Cyshield and _VOIS.</p>
+  <div class="highlights">
+    <div>
+      <h3>Faster releases</h3>
+      <p>Optimized test workflows that shrank regression cycles from hours to minutes, with scheduled runs and failure analysis reports.</p>
+    </div>
+    <div>
+      <h3>Frameworks that last</h3>
+      <p>Designed and refactored automation frameworks for web, mobile and APIs so they stay clean, scalable and easy for the whole team to extend.</p>
+    </div>
+    <div>
+      <h3>Stronger teams</h3>
+      <p>Mentored QA engineers, shared knowledge across teams, and taught programming, Git and unit testing to ITI students.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" aria-labelledby="h-exp">
+  <h2 id="h-exp">Experience</h2>
+  <p class="intro">From manual and mobile testing to leading automation for international teams.</p>
+  <ol class="timeline">
+    <li class="current">
+      <div class="job-head"><h3>Senior Test Automation Engineer</h3><span class="when">Apr 2025 to present</span></div>
+      <p class="company"><strong>Adfinis</strong>, remote, Switzerland</p>
+      <ul>
+        <li>Build reusable automation frameworks for web applications, including complex data grids.</li>
+        <li>Write REST-assured integration tests covering the system's API endpoints, running in CI/CD.</li>
+        <li>Develop backend unit tests with Java and JUnit 5.</li>
+        <li>Run scheduled GitLab CI/CD pipelines with failure analysis reporting, cutting regression from hours to minutes.</li>
+      </ul>
+    </li>
+    <li>
+      <div class="job-head"><h3>Senior Test Automation Engineer</h3><span class="when">Sep 2024 to Apr 2025</span></div>
+      <p class="company"><strong>Cyshield</strong>, hybrid, Cairo</p>
+      <ul>
+        <li>Designed E2E testing frameworks for web and mobile apps, including the WATCH IT streaming platform.</li>
+        <li>Optimized workflows to bring regression cycles down from hours to minutes.</li>
+        <li>Mentored the team on writing stable scripts that follow real user journeys.</li>
+      </ul>
+    </li>
+    <li>
+      <div class="job-head"><h3>Senior Test Automation Engineer</h3><span class="when">Aug 2022 to Sep 2024</span></div>
+      <p class="company"><strong>_VOIS</strong>, remote, Czech Republic</p>
+      <ul>
+        <li>Built E2E suites with Selenium, Cypress and Playwright in Java, JavaScript and Python.</li>
+        <li>Created API test frameworks with REST-assured and refactored legacy frameworks for scale.</li>
+        <li>Analyzed results and maintained suites in Jenkins; managed test cases in Jira with Xray.</li>
+        <li>Worked with developers on each user story to plan coverage and design unit tests.</li>
+      </ul>
+    </li>
+    <li>
+      <div class="job-head"><h3>Testing Engineer</h3><span class="when">Jul 2021 to Jul 2022</span></div>
+      <p class="company"><strong>_VOIS</strong>, remote, Germany</p>
+      <ul>
+        <li>Automated iOS and Android app tests with Appium.</li>
+        <li>Ran system, integration and regression testing, and reviewed requirements for feasibility.</li>
+      </ul>
+    </li>
+    <li>
+      <div class="job-head"><h3>External Instructor</h3><span class="when">Nov 2021 to present</span></div>
+      <p class="company"><strong>Information Technology Institute (ITI)</strong>, remote, Egypt</p>
+      <ul>
+        <li>Teach Java, C and C++, plus Git workflows on GitHub, GitLab and Bitbucket.</li>
+        <li>Teach unit testing with JUnit 5 and Pytest.</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section id="skills" aria-labelledby="h-skills">
+  <h2 id="h-skills">Skills</h2>
+  <p class="intro">The tools I use day to day, grouped by where they fit in the testing process.</p>
+  <div class="skills">
+    <div><h3>UI and E2E automation</h3><ul class="tags"><li>Playwright</li><li>Playwright MCP</li><li>Selenium WebDriver</li><li>Cypress</li><li>Protractor</li><li>Appium</li></ul></div>
+    <div><h3>Test frameworks and methods</h3><ul class="tags"><li>JUnit</li><li>TestNG</li><li>Pytest</li><li>Mocha</li><li>Chai</li><li>Jest</li><li>TDD</li><li>BDD</li></ul></div>
+    <div><h3>API, performance and security</h3><ul class="tags"><li>REST-assured</li><li>Postman</li><li>cURL</li><li>k6</li><li>JMeter</li><li>LoadRunner</li><li>Burp Suite</li></ul></div>
+    <div><h3>Languages</h3><ul class="tags"><li>Java</li><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>Go</li><li>C/C++</li><li>Bash</li></ul></div>
+    <div><h3>CI/CD and DevOps</h3><ul class="tags"><li>GitLab CI/CD</li><li>GitHub Actions</li><li>Jenkins</li><li>Docker</li><li>Kubernetes</li><li>ArgoCD</li><li>Linux</li><li>Maven</li></ul></div>
+    <div><h3>AI-assisted testing</h3><ul class="tags"><li>Claude</li><li>Codex</li><li>Cursor</li><li>Antigravity</li><li>Playwright CLI</li></ul></div>
+    <div><h3>Quality and process</h3><ul class="tags"><li>Jira + Xray</li><li>Automotive SPICE</li><li>CMMI</li><li>ISO 9001</li><li>Scrum</li></ul></div>
+    <div><h3>Version control</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>GitLab</li><li>Bitbucket</li></ul></div>
+  </div>
+</section>
+
+<section id="credentials" aria-labelledby="h-cred">
+  <div class="split">
+    <div>
+      <h2 id="h-cred">Certifications</h2>
+      <ul class="plain">
+        <li>ISTQB Certified Tester Foundation Level (CTFL)<span class="sub">Code 210202001</span></li>
+        <li>ISTQB CTFL Acceptance Testing (CTFL-AT)<span class="sub">Code 210404001</span></li>
+        <li>ISTQB CTFL Mobile Application Testing (CTFL-MAT)<span class="sub">Code 210606001</span></li>
+        <li>ICAgile Professional Agile Test Automation (ICP-ATA)<span class="sub">Code 242-30704</span></li>
+        <li>Agile Scrum Master<span class="sub">Code 3613468</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <ul class="plain">
+        <li>B.Sc. Computer Science and Engineering<span class="sub">Faculty of Electronic Engineering, Menoufia University, 2015 to 2020. Very Good with Honors (80%), ranked 3rd. Graduation project: Excellent.</span></li>
+        <li>9-month diploma, Software Testing and Quality Assurance<span class="sub">Information Technology Institute (ITI), Smart Village, 2020 to 2021</span></li>
+      </ul>
+      <h2 style="margin-top:2.5rem">Languages</h2>
+      <ul class="plain">
+        <li>Arabic<span class="sub">Native</span></li>
+        <li>English<span class="sub">Fluent</span></li>
+        <li>German<span class="sub">Basic</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact" aria-labelledby="h-contact">
+  <h2 id="h-contact">Let's talk about your test strategy</h2>
+  <p class="intro">I'm open to senior automation and QA lead roles, remote or in Egypt.</p>
+  <p><a class="big" href="mailto:kareemm.zafan@gmail.com">kareemm.zafan@gmail.com</a></p>
+</section>
+
+<footer>© <span id="yr">2026</span> Kareem Abdelaziz</footer>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.querySelectorAll('.runner .line').forEach(function(el, i){
+    el.style.animationDelay = (0.15 + i * 0.28) + 's';
+  });
+</script>
+</body>
+</html>
